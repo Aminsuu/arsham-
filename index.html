@@ -3,25 +3,38 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>ارشام</title>
+  <title>سایت ارشام</title>
   <style>
     body {
       margin: 0;
       height: 100vh;
-      background: url('https://i.ibb.co/yB3vstB/IMG-20240731-163543-048.jpg') no-repeat center center;
-      background-size: cover;
       display: flex;
       align-items: center;
       justify-content: center;
+      font-family: sans-serif;
+      background: linear-gradient(135deg, #ff7e5f, #feb47b);
     }
     h1 {
-      font-size: 100px;
-      color: rgba(255, 255, 255, 0.7);
-      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+      font-size: 80px;
+      background: linear-gradient(270deg, #ff6a00, #ff0080, #6a00ff, #00c3ff);
+      background-size: 800% 800%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: textGradient 6s ease infinite, fadeIn 2s ease-in-out;
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    }
+    @keyframes textGradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.8); }
+      to { opacity: 1; transform: scale(1); }
     }
   </style>
 </head>
 <body>
-  <h1>جنده فقط 300</h1>
+  <h1>ارشام کصخرنه</h1>
 </body>
 </html>
